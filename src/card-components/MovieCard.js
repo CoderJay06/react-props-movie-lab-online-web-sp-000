@@ -33,9 +33,7 @@ export default class MovieCard extends Component {
     // console.log(this.props)
     return (
       <div className="movie-card">
-        {/* CardBack will display the title, genres and IMDB rating. 
-        CardFront will only be used to display the movie poster */}
-        <CardFront poster={this.props.poster} />
+        <CardFront poster={posterMap[this.props.poster]} />
         <CardBack title={this.props.title} genres={this.props.genres} 
           IMDBRating={this.props.IMDBRating} />
       </div>
